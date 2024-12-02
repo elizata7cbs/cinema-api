@@ -1,0 +1,36 @@
+INFO 2024-12-02 10:34:19,871 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 10:34:24,636 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\CineCashe\settings.py changed, reloading.
+INFO 2024-12-02 10:34:26,259 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 10:34:31,758 views Cache MISS for 'movie_3'. Fetched from external API and cached. Time taken: 0.291318 seconds.
+INFO 2024-12-02 10:34:31,764 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1353
+INFO 2024-12-02 10:34:34,288 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.000062 seconds.
+INFO 2024-12-02 10:34:34,290 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1364
+INFO 2024-12-02 10:34:35,522 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.000066 seconds.
+INFO 2024-12-02 10:34:35,524 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1364
+INFO 2024-12-02 10:34:36,862 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.000065 seconds.
+INFO 2024-12-02 10:34:36,863 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1364
+INFO 2024-12-02 10:34:38,104 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.000046 seconds.
+INFO 2024-12-02 10:34:38,105 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1364
+INFO 2024-12-02 10:49:15,801 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\CineCashe\settings.py changed, reloading.
+INFO 2024-12-02 10:49:17,723 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 10:52:00,721 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\CineCashe\settings.py changed, reloading.
+INFO 2024-12-02 10:52:01,993 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 10:53:34,175 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py changed, reloading.
+INFO 2024-12-02 10:53:35,366 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 10:56:04,751 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\CineCashe\settings.py changed, reloading.
+INFO 2024-12-02 10:56:06,194 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 11:02:00,855 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py changed, reloading.
+INFO 2024-12-02 11:02:02,670 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 11:06:26,962 views Cache MISS for 'popular_movies'. Fetched from external API and cached. Time taken: 0.687891 seconds.
+INFO 2024-12-02 11:06:26,967 basehttp "GET /api/movies/ HTTP/1.1" 200 6166
+INFO 2024-12-02 11:06:45,508 views Cache HIT for 'popular_movies'. Time to fetch from cache: 0.000085 seconds.
+INFO 2024-12-02 11:06:45,509 basehttp "GET /api/movies/?page=2 HTTP/1.1" 200 11970
+INFO 2024-12-02 11:10:09,440 views Cache HIT for 'popular_movies'. Time to fetch from cache: 0.000689 seconds.
+INFO 2024-12-02 11:10:09,443 basehttp "GET /api/movies/?page=3 HTTP/1.1" 200 11970
+INFO 2024-12-02 13:06:53,937 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 13:07:22,001 views Cache MISS for 'popular_movies'. Fetched from external API and cached. Time taken: 0.565688 seconds.
+INFO 2024-12-02 13:07:22,005 basehttp "GET /api/movies/ HTTP/1.1" 200 6166
+INFO 2024-12-02 13:07:28,018 views Cache HIT for 'popular_movies'. Time to fetch from cache: 0.000091 seconds.
+INFO 2024-12-02 13:07:28,020 basehttp "GET /api/movies/ HTTP/1.1" 200 11970
+INFO 2024-12-02 13:07:29,801 views Cache HIT for 'popular_movies'. Time to fetch from cache: 0.000088 seconds.
+INFO 2024-12-02 13:07:29,802 basehttp "GET /api/movies/ HTTP/1.1" 200 11970

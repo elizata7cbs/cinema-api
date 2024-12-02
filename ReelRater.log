@@ -1,0 +1,142 @@
+2024-12-02 08:45:21,600 - ReelRater - INFO - Cache MISS for 'movie_123'. Fetched from external API and cached. Time taken: 0.77 seconds.
+2024-12-02 08:46:13,513 - ReelRater - INFO - Cache MISS for 'movie_3'. Fetched from external API and cached. Time taken: 0.71 seconds.
+2024-12-02 08:46:19,519 - ReelRater - INFO - Cache HIT for 'movie_3'. Time to fetch from cache: 0.00 seconds.
+2024-12-02 08:46:21,471 - ReelRater - INFO - Cache HIT for 'movie_3'. Time to fetch from cache: 0.00 seconds.
+2024-12-02 08:46:23,216 - ReelRater - INFO - Cache HIT for 'movie_3'. Time to fetch from cache: 0.00 seconds.
+2024-12-02 08:46:24,805 - ReelRater - INFO - Cache HIT for 'movie_3'. Time to fetch from cache: 0.00 seconds.
+2024-12-02 08:46:26,310 - ReelRater - INFO - Cache HIT for 'movie_3'. Time to fetch from cache: 0.00 seconds.
+INFO 2024-12-02 08:50:15,351 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 08:50:22,497 views Cache MISS for 'movie_3'. Fetched from external API and cached. Time taken: 0.55 seconds.
+INFO 2024-12-02 08:50:22,501 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1378
+INFO 2024-12-02 08:50:41,387 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.00 seconds.
+INFO 2024-12-02 08:50:41,389 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1389
+INFO 2024-12-02 08:50:43,081 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.00 seconds.
+INFO 2024-12-02 08:50:43,083 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1389
+INFO 2024-12-02 08:50:44,596 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.00 seconds.
+INFO 2024-12-02 08:50:44,599 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1389
+INFO 2024-12-02 08:50:45,953 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.00 seconds.
+INFO 2024-12-02 08:50:45,956 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1389
+INFO 2024-12-02 08:50:47,506 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.00 seconds.
+INFO 2024-12-02 08:50:47,508 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1389
+INFO 2024-12-02 08:50:49,014 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.00 seconds.
+INFO 2024-12-02 08:50:49,017 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1389
+INFO 2024-12-02 08:54:45,782 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py changed, reloading.
+INFO 2024-12-02 08:54:47,627 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 08:55:28,697 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py changed, reloading.
+INFO 2024-12-02 08:55:30,329 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 08:56:21,765 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py changed, reloading.
+INFO 2024-12-02 08:56:23,423 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 08:56:27,485 views Cache MISS for 'movie_3'. Fetched from external API and cached. Time taken: 0.314292 seconds.
+INFO 2024-12-02 08:56:27,488 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1378
+INFO 2024-12-02 08:56:31,569 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.000114 seconds.
+INFO 2024-12-02 08:56:31,572 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1389
+INFO 2024-12-02 08:56:37,195 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.000078 seconds.
+INFO 2024-12-02 08:56:37,197 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1389
+INFO 2024-12-02 08:56:39,003 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.000078 seconds.
+INFO 2024-12-02 08:56:39,006 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1389
+INFO 2024-12-02 08:56:40,737 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.000064 seconds.
+INFO 2024-12-02 08:56:40,740 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1389
+ERROR 2024-12-02 08:59:25,785 log Internal Server Error: /api/ratings
+Traceback (most recent call last):
+  File "C:\Users\Elizabeth.Wamalwa\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Elizabeth.Wamalwa\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\Elizabeth.Wamalwa\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Elizabeth.Wamalwa\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/ratings/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-02 08:59:25,794 basehttp "POST /api/ratings HTTP/1.1" 500 69186
+WARNING 2024-12-02 09:00:03,034 log Bad Request: /api/ratings/
+WARNING 2024-12-02 09:00:03,036 basehttp "POST /api/ratings/ HTTP/1.1" 400 77
+INFO 2024-12-02 09:00:53,576 views Saved rating successfully.
+INFO 2024-12-02 09:00:53,579 basehttp "POST /api/ratings/ HTTP/1.1" 201 75
+INFO 2024-12-02 09:02:02,284 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py changed, reloading.
+INFO 2024-12-02 09:02:04,283 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 09:02:09,118 views Movie rating saved successfully.
+INFO 2024-12-02 09:02:09,121 basehttp "POST /api/ratings/ HTTP/1.1" 201 75
+INFO 2024-12-02 09:09:46,239 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py changed, reloading.
+INFO 2024-12-02 09:09:48,165 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 09:15:34,215 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\CineCashe\settings.py changed, reloading.
+INFO 2024-12-02 09:15:36,174 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 09:16:44,224 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\CineCashe\urls.py changed, reloading.
+INFO 2024-12-02 09:16:46,290 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 09:17:32,304 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py changed, reloading.
+INFO 2024-12-02 09:17:34,119 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 09:30:27,428 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py changed, reloading.
+INFO 2024-12-02 09:30:29,819 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 09:32:35,306 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\CineCashe\settings.py changed, reloading.
+INFO 2024-12-02 09:32:37,185 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 09:45:16,298 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-02 09:45:22,447 log Unauthorized: /api/movie/3/
+WARNING 2024-12-02 09:45:22,448 basehttp "POST /api/movie/3/ HTTP/1.1" 401 58
+WARNING 2024-12-02 09:45:47,371 log Unauthorized: /api/movie/3/
+WARNING 2024-12-02 09:45:47,373 basehttp "GET /api/movie/3/ HTTP/1.1" 401 58
+INFO 2024-12-02 09:53:11,200 basehttp "POST /api/token/ HTTP/1.1" 200 483
+WARNING 2024-12-02 09:54:08,670 log Unauthorized: /api/movie/3/
+WARNING 2024-12-02 09:54:08,672 basehttp "GET /api/movie/3/ HTTP/1.1" 401 58
+WARNING 2024-12-02 09:54:56,864 log Unauthorized: /api/movie/3/
+WARNING 2024-12-02 09:54:56,866 basehttp "GET /api/movie/3/ HTTP/1.1" 401 58
+INFO 2024-12-02 09:55:51,864 basehttp "POST /api/token/ HTTP/1.1" 200 483
+WARNING 2024-12-02 09:56:43,639 log Unauthorized: /api/movie/3/
+WARNING 2024-12-02 09:56:43,642 basehttp "GET /api/movie/3/ HTTP/1.1" 401 58
+WARNING 2024-12-02 10:06:51,968 log Not Found: /
+api/movie/3/
+WARNING 2024-12-02 10:06:51,970 basehttp "GET /%0Aapi/movie/3/ HTTP/1.1" 404 2871
+INFO 2024-12-02 10:10:34,604 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py changed, reloading.
+INFO 2024-12-02 10:10:36,869 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 10:10:48,162 views Cache MISS for 'movie_3'. Fetched from external API and cached. Time taken: 0.273321 seconds.
+INFO 2024-12-02 10:10:48,167 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1353
+INFO 2024-12-02 10:11:23,939 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.000060 seconds.
+INFO 2024-12-02 10:11:23,941 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1364
+INFO 2024-12-02 10:12:11,995 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py changed, reloading.
+INFO 2024-12-02 10:12:14,012 autoreload Watching for file changes with StatReloader
+ERROR 2024-12-02 10:12:16,469 log Internal Server Error: /api/movie/3/
+Traceback (most recent call last):
+  File "C:\Users\Elizabeth.Wamalwa\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Elizabeth.Wamalwa\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Elizabeth.Wamalwa\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Elizabeth.Wamalwa\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elizabeth.Wamalwa\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Elizabeth.Wamalwa\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Elizabeth.Wamalwa\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Elizabeth.Wamalwa\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py", line 58, in get
+    url = f'{TMDB_BASE_URL}movie/{movie_id}?api_key={TMDB_API_KEY}&language=en-US'
+             ^^^^^^^^^^^^^
+NameError: name 'TMDB_BASE_URL' is not defined
+ERROR 2024-12-02 10:12:16,480 basehttp "GET /api/movie/3/ HTTP/1.1" 500 94075
+INFO 2024-12-02 10:13:06,274 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py changed, reloading.
+INFO 2024-12-02 10:13:08,183 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 10:19:10,741 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py changed, reloading.
+INFO 2024-12-02 10:19:15,470 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 10:19:24,146 views Cache MISS for 'movie_3'. Fetched from external API and cached. Time taken: 0.385121 seconds.
+INFO 2024-12-02 10:19:24,153 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1353
+INFO 2024-12-02 10:19:29,086 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.000117 seconds.
+INFO 2024-12-02 10:19:29,089 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1364
+INFO 2024-12-02 10:19:31,158 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.000086 seconds.
+INFO 2024-12-02 10:19:31,162 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1364
+INFO 2024-12-02 10:20:11,874 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\ReelRater\views.py changed, reloading.
+INFO 2024-12-02 10:20:14,409 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 10:23:04,440 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\CineCashe\settings.py changed, reloading.
+INFO 2024-12-02 10:23:07,681 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 10:23:40,769 autoreload Watching for file changes with StatReloader
+INFO 2024-12-02 10:23:47,293 views Cache MISS for 'movie_3'. Fetched from external API and cached. Time taken: 0.340804 seconds.
+INFO 2024-12-02 10:23:47,299 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1353
+INFO 2024-12-02 10:23:50,798 views Cache HIT for 'movie_3'. Time to fetch from cache: 0.000081 seconds.
+INFO 2024-12-02 10:23:50,801 basehttp "GET /api/movie/3/ HTTP/1.1" 200 1364
+INFO 2024-12-02 10:34:17,362 autoreload C:\Users\Elizabeth.Wamalwa\Desktop\MovieSphere\CineCashe\CineCashe\settings.py changed, reloading.
