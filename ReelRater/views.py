@@ -5,13 +5,13 @@ from django.core.cache import cache
 from rest_framework import generics
 from django.conf import settings
 from rest_framework.pagination import PageNumberPagination
+from rest_framework.permissions import IsAuthenticated
 from .serializers import RecommendationsSerializer, RatingSerializer
 from helpers import custom_response
-
 logger = logging.getLogger('ReelRater')
 
 class MovieListView(generics.GenericAPIView):
-    # permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
     def get(self, request, *args, **kwargs):
         cache_key = 'popular_movies'
@@ -39,9 +39,10 @@ class MovieListView(generics.GenericAPIView):
         except requests.exceptions.RequestException as e:
             logger.error(f"Error fetching popular movies: {e}")
             return custom_response(errors=str(e), status=400, message="Error fetching movies")
-# Similarly, apply changes to other views:
+
 
 class MovieDetailView(generics.GenericAPIView):
+    permission_classes = [IsAuthenticated]
     def get(self, request, movie_id, *args, **kwargs):
         cache_key = f'movie_{movie_id}'
         start_time = time.perf_counter()
@@ -66,6 +67,7 @@ class MovieDetailView(generics.GenericAPIView):
             return custom_response(errors=str(e), status=400, message="Error fetching movie")
 
 class RecommendationsView(generics.CreateAPIView):
+    # permission_classes = [IsAuthenticated]
     serializer_class = RecommendationsSerializer
 
     def post(self, request, *args, **kwargs):
@@ -99,6 +101,7 @@ class RecommendationsView(generics.CreateAPIView):
             return custom_response(errors=str(e), status=400, message="Failed to fetch recommendations")
 
 class RatingView(generics.CreateAPIView):
+    permission_classes = [IsAuthenticated]
     serializer_class = RatingSerializer
 
     def post(self, request, *args, **kwargs):
