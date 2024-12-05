@@ -13,14 +13,12 @@ logger = logging.getLogger('ReelRater')
 class MovieListView(generics.GenericAPIView):
     permission_classes = [IsAuthenticated]
 
-    def get(self, request, *args, **kwargs):
+    def get_queryset(self):
+        # Return the list of movies from the cache or external API
         cache_key = 'popular_movies'
-        start_time = time.perf_counter()
         cached_movies = cache.get(cache_key)
         if cached_movies:
-            elapsed_time = time.perf_counter() - start_time
-            logger.info(f"Cache HIT for 'popular_movies'. Time to fetch from cache: {elapsed_time:.6f} seconds.")
-            return custom_response(data=cached_movies, message="Movies fetched from cache successfully")
+            return cached_movies
 
         url = f'{settings.TMDB_BASE_URL}movie/popular?api_key={settings.TMDB_API_KEY}&language=en-US&page=1'
         try:
@@ -28,17 +26,23 @@ class MovieListView(generics.GenericAPIView):
             response.raise_for_status()
             movies = response.json().get('results', [])
             cache.set(cache_key, movies, timeout=3600)
-            elapsed_time = time.perf_counter() - start_time
-            logger.info(f"Cache MISS for 'popular_movies'. Fetched from external API and cached. Time taken: {elapsed_time:.6f} seconds.")
-
-            paginator = PageNumberPagination()
-            paginator.page_size = 10
-            result_page = paginator.paginate_queryset(movies, request)
-            return paginator.get_paginated_response(result_page)
-
+            return movies
         except requests.exceptions.RequestException as e:
             logger.error(f"Error fetching popular movies: {e}")
-            return custom_response(errors=str(e), status=400, message="Error fetching movies")
+            raise
+
+    def get(self, request, *args, **kwargs):
+        start_time = time.perf_counter()
+        movies = self.get_queryset()
+
+        elapsed_time = time.perf_counter() - start_time
+        logger.info(f"Fetched movies. Time taken: {elapsed_time:.6f} seconds.")
+
+        paginator = PageNumberPagination()
+        paginator.page_size = 10
+        result_page = paginator.paginate_queryset(movies, request)
+        return paginator.get_paginated_response(result_page)
+
 
 
 class MovieDetailView(generics.GenericAPIView):
